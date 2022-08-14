@@ -4,8 +4,8 @@
          ffi/unsafe/cvector)
 (provide (all-defined-out))
 
-(define-ffi-definer define-curses (ffi-lib "libncurses" '("5" #f)))
-(define-ffi-definer define-panel (ffi-lib "libpanel" '("5" #f)))
+(define-ffi-definer define-curses (ffi-lib "libncursesw"))) ;'("5" #f)))
+(define-ffi-definer define-panel (ffi-lib "libpanel"))) ;'("5" #f)))
 
 (define _WINDOW-pointer (_cpointer 'WINDOW))
 (define _chtype _ulong)
